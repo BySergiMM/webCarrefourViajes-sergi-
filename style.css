@@ -93,52 +93,80 @@ footer {
   filter: brightness(0.5);
 }
 /*-------------------     CARTAS VIAJES    -------------------*/
-.travel-section {
-  margin: 50px auto;
-  max-width: 800px;
+body {
+  background-size: cover;
+  color: #545454;
 }
 
-.travel-section h2 {
-  font-size: 2rem;
+.content-section{
+  margin-top: 20px;
+}
+
+.intro {
+  margin-bottom: 80px;
+}
+.intro i {
+  font-size: 80px;
+}
+.intro h1 {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 100px;
+  background: #545454;
+}
+
+.content-area {
+  height: 400px;
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+}
+
+.plan {
+  background: white;
+  margin: 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 10px 19px -11px rgba(0, 0, 0, 0.75);
   text-align: center;
-}
-
-.card-container {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 30px;
+}
+.plan:hover {
+  top: -5px;
 }
 
-.card {
-  width: calc(33.3% - 10px);
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+.plan > * {
+  flex: 1 1 100%;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-  width: 100%;
+.image {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   height: 200px;
-  object-fit: cover;
-  display: block;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.card h3 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 10px 0;
-  color: #333;
+.image-text {
+  height: 200px;
+  width: 100%;
+  padding: 0 25px;
 }
-
-.card a {
-  text-decoration: none;
+.image-text h3 {
+  margin-bottom: 20px;
+}
+.image-text p {
+  font-size: 12px;
+  color: #a1a1a1;
 }
 
 /*FOOTER*/
