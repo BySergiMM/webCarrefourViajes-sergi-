@@ -4,6 +4,7 @@ color azul logo = #005098
 color azul flojo logo = #00a7df
 color azul footer = #8FBAD8
 */
+
 body {
   margin: 0;
   padding: 0;
@@ -93,6 +94,12 @@ footer {
   filter: brightness(0.5);
 }
 /*-------------------     CARTAS VIAJES    -------------------*/
+
+.pcard {
+  font-size: 0.9em;
+  text-align: center;
+}
+
 body {
   background-size: cover;
   color: #545454;
