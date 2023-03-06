@@ -97,7 +97,7 @@ footer {
 
 .pcard {
   font-size: 0.9em;
-  text-align: center;
+  text-align: center; 
 }
 
 body {
@@ -209,6 +209,7 @@ td:first-child {
   text-align: center;
 }
 
+/*-------------------     CONTACTOS    -------------------*/
 .contactos {
   list-style: none;
   margin: 0;
