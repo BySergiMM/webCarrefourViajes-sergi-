@@ -20,7 +20,7 @@ footer {
 }
 
 /*HEADER*/
-.nonestyle{
+.nonestyle {
   text-decoration: none;
 }
 
@@ -58,29 +58,30 @@ nav a {
 
 /*-------------------     HORARIO    -------------------*/
 table {
-	margin-top: 20px;
-	border-collapse: collapse;
-	width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-th, td {
-	padding: 6px;
-	text-align: center;
+th,
+td {
+  padding: 6px;
+  text-align: center;
 }
 
 td:first-child {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 /*-------------------     HORARIO    -------------------*/
 .columna {
-	flex: 1;
-	margin: 0 10px;
+  flex: 1;
+  margin: 0 10px;
 }
 
-.columnas{
+.columnas {
   display: flex;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 10px;
   text-align: center;
 }
@@ -127,7 +128,8 @@ td:first-child {
 
 .form-group {
   width: 100%;
-  margin-bottom: 20px; /* added to create space between rows */
+  margin-bottom: 20px;
+  /* added to create space between rows */
 }
 
 .form-control,
@@ -153,6 +155,17 @@ button.button {
 
 hr {
   border-color: rgba(255, 255, 255, 0.6);
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2em;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 /*-------  BUTTON  --------*/
