@@ -1,13 +1,109 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  padding-bottom: 100px;
+  font-family: Arial, sans-serif;
 }
 
-#contact {
-  width: 100%;
-  height: 100%;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #8fbad8;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+/*HEADER*/
+.nonestyle{
+  text-decoration: none;
+}
+
+h1 {
+  color: black;
+  margin: 0;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+/*FOOTER*/
+
+/*-------------------     HORARIO    -------------------*/
+table {
+	margin-top: 20px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	padding: 6px;
+	text-align: center;
+}
+
+td:first-child {
+	font-weight: bold;
+}
+
+/*-------------------     HORARIO    -------------------*/
+.columna {
+	flex: 1;
+	margin: 0 10px;
+}
+
+.columnas{
+  display: flex;
+	flex-wrap: wrap;
+  padding: 10px;
+  text-align: center;
+}
+
+/*-------------------     CONTACTOS    -------------------*/
+.contactos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+/*---------------------    SECTION CONTACTO    ----------------------*/
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  width: 840px;
 }
 
 .section-header {
@@ -15,172 +111,69 @@ body {
   margin: 0 auto;
   padding: 40px 0;
   font: 300 60px 'Oswald', sans-serif;
-  color: #fff;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 6px;
+  margin-top: 0;
 }
 
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  width: 840px;
-}
-
-/* Left contact page */
 .form-horizontal {
-  /*float: left;*/
-  width: 400px;
+  width: 100%;
   font-family: 'Lato';
   font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.form-control, 
+.form-group {
+  width: 100%;
+  margin-bottom: 20px; /* added to create space between rows */
+}
+
+.form-control,
 textarea {
-  width: 400px;
-  background-color: #000;
-  color: #fff;
+  width: 100%;
+  background-color: #2c2c2c;
+  color: #ffffff;
   letter-spacing: 1px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
 }
 
-.send-button {
+button.button {
   margin-top: 15px;
   height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-}
-
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
+  width: 100%;
 }
 
 .send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
-}
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-
-/* Begin Right Contact Page */
-.direct-contact-container {
-  width: 400px;
-}
-
-/* Location, Phone, Email Section */
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-}
-
-.list-item {
-  line-height: 4;
-  color: #aaa;
-}
-
-.contact-text {
-  font: 300 18px 'Lato', sans-serif;
-  letter-spacing: 1.9px;
-  color: #bbb;
-}
-
-.place {
-  margin-left: 62px;
-}
-
-.phone {
-  margin-left: 56px;
-}
-
-.gmail {
-  margin-left: 53px;
-}
-
-.contact-text a {
-  color: #bbb;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-
-/* Social Media Icons */
-.social-media-list {
-  position: relative;
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.social-media-list li a {
-  color: #fff;
-}
-
-.social-media-list li {
-  position: relative; 
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 10px 3px;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgb(27,27,27);
-  cursor: pointer; 
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:hover {
-  background-color: #fff; 
-}
-
-.social-media-list li:hover:after {
-  opacity: 1;  
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-}
-
-.social-media-list li:hover a {
-  color: #000;
-}
-
-.copyright {
-  font: 200 14px 'Oswald', sans-serif;
-  color: #555;
-  letter-spacing: 1px;
-  text-align: center;
+  margin-left: 10px;
 }
 
 hr {
   border-color: rgba(255, 255, 255, 0.6);
+}
+
+/*-------  BUTTON  --------*/
+.container {
+  text-align: center;
+}
+
+button {
+  background-color: #407af8;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: rgb(31, 98, 245);
 }
