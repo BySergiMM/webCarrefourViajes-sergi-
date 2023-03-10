@@ -4,9 +4,8 @@
 <!--------------------------     PESTAÑA     -------------------------->
 
 <head>
-    
     <title>Viajes nalanda</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styleContacto.css" />
     <link rel="shortcut icon" href="/img/LogoCarrefourViajes.png" />
     <script>
         window.onload = function() {
@@ -35,17 +34,29 @@
     <!--------------------------     HEADER     -------------------------->
     <header>
         <a class="nonestyle" href="/index.html">
-            <h1>Viajes Nalanda</h1>
+          <h1>Viajes Nalanda</h1>
         </a>
         <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/destinos/destinos.html">Destinos</a></li>
-                <li><a href="/quienessomos/quienessomos.html">Quienes Somos</a></li>
-                <li><a href="/contacto/contacto.html">Contacto</a></li>
-            </ul>
+          <ul class="menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#">Destinos</a>
+              <ul>
+                <li><a href="#">Sortides especials</a></li>
+                <li><a href="#">Excursions d’1 dia</a></li>
+                <li><a href="#">Cap de semana</a></li>
+                <li><a href="#">Escapades</a></li>
+                <li><a href="#">Ponts</a></li>
+                <li><a href="#">Estades</a></li>
+                <li><a href="#">Circuits Nacionals</a></li>
+                <li><a href="#">Circuits Internacionals</a></li>
+              </ul>
+            </li>
+            <li><a href="/quienessomos/quienesSomos.html">Quienes Somos</a></li>
+            <li><a href="/contacto/contacto.html">Contacto</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <hr>
     <div id="mensaje" class="mensajes"></div>

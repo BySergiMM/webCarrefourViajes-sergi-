@@ -1,6 +1,11 @@
-.mensajes{
-  color: #d6d6d6;
-  align-content: center;
+.mensajes {
+  border-radius: 5px;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 100%;
 }
 
 body {
@@ -25,6 +30,7 @@ footer {
 }
 
 /*HEADER*/
+
 .nonestyle {
   text-decoration: none;
 }
@@ -34,29 +40,83 @@ h1 {
   margin: 0;
 }
 
-nav {
-  flex: 1;
-  text-align: right;
-}
-
 nav ul {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
 nav li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-nav li:first-child {
-  margin-left: 0;
+  margin: 0 10px;
+  position: relative;
 }
 
 nav a {
-  color: black;
+  color: #333;
   text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  padding: 10px;
+  max-width: 250px;
+  z-index: 9999;
+}
+
+nav .menu>li {
+  position: relative;
+  display: inline-block;
+}
+
+nav .menu>li>a {
+  display: block;
+  padding: 15px 20px;
+  color: #333;
+  font-family: 'Open sans', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav ul ul li {
+  display: block;
+  white-space: nowrap;
+}
+
+nav ul ul li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  padding: 5px;
+}
+
+nav .menu li a:hover {
+  color: #005098;
+  transition: all .3s;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.dropdown:hover ul {
+  display: block;
 }
 
 /*FOOTER*/
@@ -185,4 +245,6 @@ button {
 button:hover {
   background-color: rgb(31, 98, 245);
 }
+
+
 

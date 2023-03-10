@@ -19,7 +19,7 @@ header {
   margin-bottom: 10px;
 }
 
-.nonestyle{
+.nonestyle {
   text-decoration: none;
 }
 
@@ -28,31 +28,88 @@ h1 {
   margin: 0;
 }
 
-nav {
-  flex: 1;
-  text-align: right;
-}
-
+/*LISTA HEADER*/
 nav ul {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
 nav li {
-  display: inline-block;
-  margin-left: 20px;
+  margin: 0 10px;
+  position: relative;
 }
 
-nav li:first-child {
-  margin-left: 0;
-}
-
-nav a {
-  color: black;
+nav a { 
+  color: #333;
   text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
 }
 
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  padding: 10px;
+  max-width: 250px;
+  z-index: 9999;
+}
+
+nav .menu>li {
+  position: relative;
+  display: inline-block;
+}
+
+nav .menu>li>a {
+  display: block;
+  padding: 15px 20px;
+  color: #333;
+  font-family: 'Open sans', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav ul ul li {
+  display: block;
+  white-space: nowrap;
+}
+
+nav ul ul li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  padding: 5px;
+}
+
+nav .menu li a:hover {
+  color: #005098;
+  transition: all .3s;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+
+/*OTRA COSA*/
 main {
   color: black;
   max-width: 800px;
@@ -80,7 +137,7 @@ footer {
   color: black;
   padding: 20px;
   text-align: center;
-	
+
 }
 
 .contenedor {
@@ -93,11 +150,12 @@ footer {
   z-index: -1;
   filter: brightness(0.5);
 }
+
 /*-------------------     CARTAS VIAJES    -------------------*/
 
 .pcard {
   font-size: 0.9em;
-  text-align: center; 
+  text-align: center;
 }
 
 body {
@@ -105,16 +163,18 @@ body {
   color: #545454;
 }
 
-.content-section{
+.content-section {
   margin-top: 20px;
 }
 
 .intro {
   margin-bottom: 80px;
 }
+
 .intro i {
   font-size: 80px;
 }
+
 .intro h1 {
   margin-top: 0;
   padding-bottom: 10px;
@@ -146,11 +206,12 @@ hr {
   display: flex;
   flex-wrap: wrap;
 }
+
 .plan:hover {
   top: -5px;
 }
 
-.plan > * {
+.plan>* {
   flex: 1 1 100%;
 }
 
@@ -168,9 +229,11 @@ hr {
   width: 100%;
   padding: 0 25px;
 }
+
 .image-text h3 {
   margin-bottom: 20px;
 }
+
 .image-text p {
   font-size: 12px;
   color: #a1a1a1;
@@ -180,29 +243,30 @@ hr {
 
 /*-------------------     HORARIO    -------------------*/
 table {
-	margin-top: 20px;
-	border-collapse: collapse;
-	width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-th, td {
-	padding: 6px;
-	text-align: center;
+th,
+td {
+  padding: 6px;
+  text-align: center;
 }
 
 td:first-child {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 /*-------------------     HORARIO    -------------------*/
 .columna {
-	flex: 1;
-	margin: 0 10px;
+  flex: 1;
+  margin: 0 10px;
 }
 
-.columnas{
+.columnas {
   display: flex;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 10px;
   text-align: center;
 }
@@ -215,14 +279,6 @@ td:first-child {
   display: flex;
 }
 
-.contacto{
-    margin-right: 10px;
+.contacto {
+  margin-right: 10px;
 }
-
-/*IMG contactos
-.img{
-  width: 50px;
-  height: 50px;
-  margin: 20px;
-}
-*/
