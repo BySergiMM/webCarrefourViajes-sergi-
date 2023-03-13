@@ -1,1 +1,150 @@
-/* Estilos CSS para la carpeta SalidasEspeciales */ 
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+ }
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+     margin-bottom: 10px;
+ }
+
+ footer {
+     background-color: #8fbad8;
+     color: black;
+     padding: 20px;
+     text-align: center;
+ }
+
+ /*HEADER*/
+ .nonestyle {
+     text-decoration: none;
+ }
+
+ h1 {
+     color: black;
+     margin: 0;
+ }
+
+
+ nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  nav a { 
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    padding: 10px;
+    max-width: 250px;
+    z-index: 9999;
+  }
+  
+  nav .menu>li {
+    position: relative;
+    display: inline-block;
+  }
+  
+  nav .menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    font-family: 'Open sans', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  nav ul ul li {
+    display: block;
+    white-space: nowrap;
+  }
+  
+  nav ul ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    padding: 5px;
+  }
+  
+  nav .menu li a:hover {
+    color: #005098;
+    transition: all .3s;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 9999;
+  }
+  
+  .dropdown:hover ul {
+    display: block;
+  }
+      
+ /*FOOTER*/
+
+ /*-------------------     HORARIO    -------------------*/
+ table {
+     margin-top: 20px;
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ th,
+ td {
+     padding: 6px;
+     text-align: center;
+ }
+
+ td:first-child {
+     font-weight: bold;
+ }
+
+ /*-------------------     HORARIO    -------------------*/
+ .columna {
+     flex: 1;
+     margin: 0 10px;
+ }
+
+ .columnas {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 10px;
+     text-align: center;
+ }
+
+ /*-------------------     CONTACTOS    -------------------*/
+ .contactos {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+ }
