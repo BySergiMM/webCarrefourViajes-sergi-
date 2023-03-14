@@ -141,7 +141,7 @@ footer {
 }
 
 .contenedor {
-  background-image: url("img/imgFondoBlog.jpg");
+  background-image: url("Img/imgFondoBlog.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -188,12 +188,14 @@ hr {
 }
 
 .content-area {
+  flex-direction: row;
   height: 400px;
   margin: 0 auto;
   width: 800px;
   display: flex;
   align-items: center;
 }
+
 
 .plan {
   background: white;
