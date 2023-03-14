@@ -211,6 +211,7 @@ footer {
     height: 300px;
     margin-right: 0;
     margin-left: 0;
+    justify-content: center;
   }
 
   .content-section {
