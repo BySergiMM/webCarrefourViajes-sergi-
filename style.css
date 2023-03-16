@@ -4,7 +4,9 @@ color azul logo = #005098
 color azul flojo logo = #00a7df
 color azul footer = #8FBAD8
 */
-
+html {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -33,11 +35,23 @@ h1 {
 /*PARA MOVIL*/
 @media screen and (max-width: 768px) {
   #menu {
-    transform: none;
-    opacity: 0;
-
-    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    position: absolute;
+    width: 100%; /* Cambia 300px a 100% */
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+  
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   }
+  
 
   body {
     margin: 0;
