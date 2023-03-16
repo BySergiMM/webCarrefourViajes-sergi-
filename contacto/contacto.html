@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
 <!--------------------------     PESTAÑA     -------------------------->
 
 <head>
@@ -8,59 +8,63 @@
     <link rel="stylesheet" type="text/css" href="styleContacto.css" />
     <link rel="shortcut icon" href="/img/LogoCarrefourViajes.png" />
     <script>
-        window.onload = function() {
-        var mensaje = getParameterByName('mensaje');
-        if (mensaje !== null) {
-            var mensajeDiv = document.getElementById('mensaje');
-            mensajeDiv.innerHTML = mensaje;
-            setTimeout(function() {
-            mensajeDiv.innerHTML = '';
-            }, 5000); // Oculta el mensaje después de 5 segundos
-        }
+        window.onload = function () {
+            var mensaje = getParameterByName('mensaje');
+            if (mensaje !== null) {
+                var mensajeDiv = document.getElementById('mensaje');
+                mensajeDiv.innerHTML = mensaje;
+                setTimeout(function () {
+                    mensajeDiv.innerHTML = '';
+                }, 5000); // Oculta el mensaje después de 5 segundos
+            }
         };
 
         function getParameterByName(name) {
-        var url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-        var results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            var url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+            var results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
         }
     </script>
 </head>
+
 <body>
     <!--------------------------     HEADER     -------------------------->
     <header>
         <a class="nonestyle" href="/index.html">
-          <h1>Viajes Nalanda</h1>
+            <h1>Viajes Nalanda</h1>
         </a>
         <nav>
-          <ul class="menu">
-            <li><a href="/index.html">Inicio</a></li>
-            <li class="dropdown">
-              <a href="/destinos/destinos.html">Destinos</a>
-              <ul>
-                <li><a href="/Destinos/SalidasEspeciales/SalidasEspeciales.html">Salidas especiales</a></li>
-                <li><a href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1Dia.html">Excursiones de 1 dia</a></li>
-                <li><a href="/Destinos/FinDeSemana/FinDeSemana.html">Fin de semana</a></li>
-                <li><a href="/Destinos/Escapadas/Escapadas.html">Escapadas</a></li>
-                <li><a href="/Destinos/Puentes/Puentes.html">Puentes</a></li>
-                <li><a href="/Destinos/EstadesCircuitosNacionales/EstadesCircuitosNacionales.html">Estades</a></li>
-                <li><a href="/Destinos/CircuitosNacionales/CircuitosNacionales.html">Circuitos nacionales</a></li>
-                <li><a href="/Destinos/CircuitosInternacionales/CircuitosInternacionales.html">Circuitos internacionales</a></li>
+            <ul class="menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="/destinos/destinos.html">Destinos</a>
+                    <ul>
+                        <li><a href="/Destinos/SalidasEspeciales/SalidasEspeciales.html">Salidas especiales</a></li>
+                        <li><a href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1Dia.html">Excursiones de 1 dia</a></li>
+                        <li><a href="/Destinos/FinDeSemana/FinDeSemana.html">Fin de semana</a></li>
+                        <li><a href="/Destinos/Escapadas/Escapadas.html">Escapadas</a></li>
+                        <li><a href="/Destinos/Puentes/Puentes.html">Puentes</a></li>
+                        <li><a href="/Destinos/EstadesCircuitosNacionales/EstadesCircuitosNacionales.html">Estades</a>
+                        </li>
+                        <li><a href="/Destinos/CircuitosNacionales/CircuitosNacionales.html">Circuitos nacionales</a>
+                        </li>
+                        <li><a href="/Destinos/CircuitosInternacionales/CircuitosInternacionales.html">Circuitos
+                                internacionales</a></li>
+                    </ul>
+                </li>
+                <li><a href="/QuienesSomos/quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            </li>
-            <li><a href="/QuienesSomos/quienesSomos.html">Quienes Somos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
         </nav>
-      </header>
+    </header>
 
     <hr>
     <div id="mensaje" class="mensajes"></div>
-    
+
     <div class="contact-wrapper container">
         <h2 class="section-header">Contacto</h2>
         <form id="contact-form" class="form-horizontal" role="form" method="post" action="send_mail.php">
@@ -87,7 +91,8 @@
 
             <div class="form-group">
                 <div class="col-sm-6">
-                    <textarea class="form-control" rows="10" placeholder="Mensaje" name="message" style="resize:none;" required></textarea>
+                    <textarea class="form-control" rows="10" placeholder="Mensaje" name="message" style="resize:none;"
+                        required></textarea>
                 </div>
             </div>
             <button class="button " id="submit" type="submit" name="submit">
@@ -95,7 +100,8 @@
                     <i class="fa fa-paper-plane"></i><span class="send-text">Enviar</span>
                 </div>
             </button>
-            <div id="thank-you-message" class="alert alert-success" role="alert" style="display: none;">¡Gracias por contactarnos! Te responderemos lo antes posible.</div>
+            <div id="thank-you-message" class="alert alert-success" role="alert" style="display: none;">¡Gracias por
+                contactarnos! Te responderemos lo antes posible.</div>
         </form>
     </div>
 </body>
