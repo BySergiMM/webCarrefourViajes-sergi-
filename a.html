@@ -4,31 +4,32 @@
 <!--------------------------     PESTAÑA     -------------------------->
 
 <head>
-    <title>Viajes nalanda</title>
-    <link rel="stylesheet" type="text/css" href="styleContacto.css" />
-    <link rel="shortcut icon" href="/Img/LogoCarrefourViajes.png" />
-    <script>
-        window.onload = function () {
-            var mensaje = getParameterByName('mensaje');
-            if (mensaje !== null) {
-                var mensajeDiv = document.getElementById('mensaje');
-                mensajeDiv.innerHTML = mensaje;
-                setTimeout(function () {
-                    mensajeDiv.innerHTML = '';
-                }, 5000); // Oculta el mensaje después de 5 segundos
-            }
-        };
-
-        function getParameterByName(name) {
-            var url = window.location.href;
-            name = name.replace(/[\[\]]/g, '\\$&');
-            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-            var results = regex.exec(url);
-            if (!results) return null;
-            if (!results[2]) return '';
-            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viajes nalanda</title>
+  <link rel="stylesheet" type="text/css" href="aa.css" />
+  <link rel="shortcut icon" href="Img/LogoCarrefourViajes.png" />
+  <script>
+    window.onload = function () {
+        var mensaje = getParameterByName('mensaje');
+        if (mensaje !== null) {
+            var mensajeDiv = document.getElementById('mensaje');
+            mensajeDiv.innerHTML = mensaje;
+            setTimeout(function () {
+                mensajeDiv.innerHTML = '';
+            }, 5000); // Oculta el mensaje después de 5 segundos
         }
-    </script>
+    };
+
+    function getParameterByName(name) {
+        var url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+        var results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+</script>
 </head>
 
 <!--------------------------     HEADER     -------------------------->
@@ -91,7 +92,6 @@
     </nav>
 </header>
 
-<!--
 <body>
     <hr>
     <div id="mensaje" class="mensajes"></div>
@@ -138,85 +138,89 @@
 </body>
 
 
-<footer>
-    <div class="columnas">
-        <div class="columna">
-            <div>
-                <h2>Horario</h2>
-                <table>
-                    <tr>
-                        <th>Día</th>
-                        <th>Apertura</th>
-                        <th>Cierre</th>
-                    </tr>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>9:30 am</td>
-                        <td>7:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Martes</td>
-                        <td>9:30 am</td>
-                        <td>7:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Miércoles</td>
-                        <td>9:30 am</td>
-                        <td>7:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Jueves</td>
-                        <td>9:30 am</td>
-                        <td>7:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Viernes</td>
-                        <td>9:30 am</td>
-                        <td>7:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Sábado</td>
-                        <td>10:00 am</td>
-                        <td>13:30 pm</td>
-                    </tr>
-                    <tr>
-                        <td>Domingo</td>
-                        <td>Cerrado</td>
-                        <td>Cerrado</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="columna">
-            <h2>Social</h2>
-            <table>
-                <tr>
-                    <td><a>Calle Lluis Pascual Roca, 24 (Sant Boi de Llobregat)</a></td>
-                </tr>
-                <tr>
-                    <td><br><a>Tel: 93 125 89 19</a></td>
-                </tr>
-                <tr>
-                    <td><br><a>Móvil: +34 692 875 813</a></td>
-                </tr>
-                <tr>
-                    <td><br><a href="mailto:vnalandasb@gmail.com">vnalandasb@gmail.com</a></td>
-                </tr>
-            </table>
-        </div>
 
-        <div class="columna">
-            <div>
-                <h2>Maps</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.3596719065367!2d2.0352909147954037!3d41.344535406614504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49b87cd0d32d7%3A0x20877f9a534b4476!2sViatges%20Carrefour%20Sant%20Boi!5e0!3m2!1ses!2ses!4v1677859388727!5m2!1ses!2ses"
-                    width="300px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
+<!--------------------------     FOOTER     -------------------------->
+<footer>
+  <div class="columnas">
+    <!----------------     HORARIO     ---------------->
+    <div class="columna">
+      <div>
+        <h2>Horario</h2>
+        <table>
+          <tr>
+            <th>Día</th>
+            <th>Apertura</th>
+            <th>Cierre</th>
+          </tr>
+          <tr>
+            <td>Lunes</td>
+            <td>9:30 am</td>
+            <td>7:30 pm</td>
+          </tr>
+          <tr>
+            <td>Martes</td>
+            <td>9:30 am</td>
+            <td>7:30 pm</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>9:30 am</td>
+            <td>7:30 pm</td>
+          </tr>
+          <tr>
+            <td>Jueves</td>
+            <td>9:30 am</td>
+            <td>7:30 pm</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>9:30 am</td>
+            <td>7:30 pm</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>10:00 am</td>
+            <td>13:30 pm</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>Cerrado</td>
+            <td>Cerrado</td>
+          </tr>
+        </table>
+      </div>
     </div>
-    <p>Derechos reservados &copy; 2023 Carrefour Viajes</p>
+    <!------------     REDES SOCIALES     ------------>
+    <div class="columna">
+      <h2>Social</h2>
+      <table>
+        <tr>
+          <td><a>Calle Lluis Pascual Roca, 24 (Sant Boi de Llobregat)</a></td>
+        </tr>
+        <tr>
+          <td><br><a>Tel: 93 125 89 19</a></td>
+        </tr>
+        <tr>
+          <td><br><a>Móvil: +34 692 875 813</a></td>
+        </tr>
+        <tr>
+          <td><br><a href="mailto:vnalandasb@gmail.com">vnalandasb@gmail.com</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!----------------     MAPS     ---------------->
+    <div class="columna">
+      <div>
+        <h2>Maps</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.3596719065367!2d2.0352909147954037!3d41.344535406614504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49b87cd0d32d7%3A0x20877f9a534b4476!2sViatges%20Carrefour%20Sant%20Boi!5e0!3m2!1ses!2ses!4v1677859388727!5m2!1ses!2ses"
+          width="300px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  <p><a>Derechos reservados &copy; 2023 Carrefour Viajes</a></p>
 </footer>
--->
 
 </html>
