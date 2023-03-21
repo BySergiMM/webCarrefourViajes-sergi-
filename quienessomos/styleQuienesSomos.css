@@ -16,7 +16,9 @@ body {
   overflow-x: hidden;
 }
 
-/*LISTA HEADER*/
+
+
+/*LISTA HEADER*/  
 /*PARA MOVIL*/
 
 header {
@@ -44,17 +46,17 @@ h1 {
     padding: 50px;
     padding-top: 125px;
     right: -100px;
-
+  
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-
+  
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-
+  
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   }
-
+  
   a {
     text-decoration: none;
     color: #232323;
@@ -150,7 +152,7 @@ h1 {
   }
 
   h1 {
-    font-size: 280%;
+    font-size:280%;
   }
 
   nav ul {
@@ -160,7 +162,7 @@ h1 {
     display: flex;
     align-items: center;
   }
-
+  
   nav li {
     margin: 10px 40px;
     position: relative;
@@ -170,11 +172,11 @@ h1 {
     transition: color 0.3s ease;
     font-size: 1.1em;
   }
-
+  
   nav li:hover {
     color: #005098;
   }
-
+  
   nav li ul {
     position: absolute;
     top: 100%;
@@ -189,23 +191,22 @@ h1 {
     border-right: 1px solid #ccc;
     border-top: 1px solid #ccc;
   }
-
+  
   nav li:hover ul {
     display: block;
   }
-
+  
   nav li ul li {
     font-weight: normal;
     margin: 5px 0;
     font-size: 1em;
     white-space: nowrap;
   }
-
+  
   nav li ul li:hover {
     color: #005098;
   }
 }
-
 
 /*FOOTER*/
 footer {
@@ -214,7 +215,6 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
 /*-------------------     HORARIO    -------------------*/
 table {
   margin-top: 20px;
@@ -251,4 +251,8 @@ td:first-child {
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+.contacto {
+  margin-right: 10px;
 }
