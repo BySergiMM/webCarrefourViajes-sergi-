@@ -1,22 +1,27 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+/*
+colores
+color azul logo = #005098
+color azul flojo logo = #00a7df
+color azul footer = #8FBAD8
+*/
+
+html {
+  overflow-x: hidden;
 }
 
-footer {
-    background-color: #8fbad8;
-    color: black;
-    padding: 20px;
-    text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
+
 /*LISTA HEADER*/
 /*PARA MOVIL*/
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px;
   margin-bottom: 10px;
 }
@@ -34,29 +39,20 @@ h1 {
 @media screen and (max-width: 768px) {
   #menu {
     position: absolute;
-    width: 100%;
+    width: 360px;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 125px;
     right: -100px;
-  
+
     background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-  
+
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-  
+
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-  }
-  
-
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-
   }
 
   a {
@@ -136,24 +132,6 @@ h1 {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
-  #menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 0;
-    padding: 50px;
-    padding-top: 125px;
-    right: -100px;
-
-    background: #ededed;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-  }
-
   #menu li {
     padding: 10px 0;
     font-size: 22px;
@@ -165,7 +143,6 @@ h1 {
   }
 }
 
-
 /*PARA PC*/
 @media screen and (min-width: 768px) {
   #menuToggle input[type="checkbox"] {
@@ -173,7 +150,7 @@ h1 {
   }
 
   h1 {
-    font-size:280%;
+    font-size: 280%;
   }
 
   nav ul {
@@ -183,7 +160,7 @@ h1 {
     display: flex;
     align-items: center;
   }
-  
+
   nav li {
     margin: 10px 40px;
     position: relative;
@@ -193,11 +170,11 @@ h1 {
     transition: color 0.3s ease;
     font-size: 1.1em;
   }
-  
+
   nav li:hover {
     color: #005098;
   }
-  
+
   nav li ul {
     position: absolute;
     top: 100%;
@@ -212,60 +189,66 @@ h1 {
     border-right: 1px solid #ccc;
     border-top: 1px solid #ccc;
   }
-  
+
   nav li:hover ul {
     display: block;
   }
-  
+
   nav li ul li {
     font-weight: normal;
     margin: 5px 0;
     font-size: 1em;
     white-space: nowrap;
   }
-  
+
   nav li ul li:hover {
     color: #005098;
   }
-
 }
 
+
 /*FOOTER*/
+footer {
+  background-color: #8fbad8;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
 
 /*-------------------     HORARIO    -------------------*/
 table {
-    margin-top: 20px;
-    border-collapse: collapse;
-    width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 th,
 td {
-    padding: 6px;
-    text-align: center;
+  padding: 6px;
+  text-align: center;
 }
 
 td:first-child {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /*-------------------     HORARIO    -------------------*/
 .columna {
-    flex: 1;
-    margin: 0 10px;
+  flex: 1;
+  margin: 0 10px;
 }
 
 .columnas {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  text-align: center;
 }
 
 /*-------------------     CONTACTOS    -------------------*/
 .contactos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
