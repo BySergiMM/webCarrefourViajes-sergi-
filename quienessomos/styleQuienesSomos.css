@@ -1,4 +1,4 @@
-html {
+html{
   overflow-x: hidden;
 }
 
@@ -9,13 +9,14 @@ body {
   overflow-x: hidden;
 }
 
-/*LISTA HEADER*/
-/*PARA MOVIL*/
+
+
+/*LISTA HEADER*/  
+
 header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  margin-bottom: 10px;
 }
 
 a {
@@ -28,6 +29,7 @@ h1 {
   margin: 0;
 }
 
+/*PARA MOVIL*/
 @media screen and (max-width: 768px) {
   #menu {
     position: absolute;
@@ -36,21 +38,21 @@ h1 {
     padding: 50px;
     padding-top: 125px;
     right: -100px;
-
-    background: #ededed;
+  
+    background: #ffffff;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-
+  
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-
+  
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    border-left: 3px solid #005098;
+    border-bottom: 3px solid #005098;
   }
-
+  
   a {
-    text-decoration: none;
     color: #232323;
-
     transition: color 0.3s ease;
   }
 
@@ -133,6 +135,31 @@ h1 {
     transform: none;
     opacity: 1;
   }
+  
+  /*ABOUT US*/
+  .content {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .fondo {
+    background-color: #d6ebf1;
+    padding-bottom: 20px;
+  }
+
+  .contentHead {
+    font-size: 50px;
+    font-weight: 50;
+    align-content: center;
+  }
+
+  .imgbody {
+    display: none;
+  }
+
+  .margen {
+    margin-bottom: 30px;
+  }
 }
 
 /*PARA PC*/
@@ -142,7 +169,7 @@ h1 {
   }
 
   h1 {
-    font-size: 280%;
+    font-size:280%;
   }
 
   nav ul {
@@ -152,7 +179,7 @@ h1 {
     display: flex;
     align-items: center;
   }
-
+  
   nav li {
     margin: 10px 40px;
     position: relative;
@@ -162,11 +189,11 @@ h1 {
     transition: color 0.3s ease;
     font-size: 1.1em;
   }
-
+  
   nav li:hover {
     color: #005098;
   }
-
+  
   nav li ul {
     position: absolute;
     top: 100%;
@@ -177,38 +204,52 @@ h1 {
     display: none;
     width: 250px;
     z-index: 1;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+    border-left: 1px solid #868686;
+    border-right: 1px solid #868686;
+    border-top: 1px solid #868686;
   }
-
+  
   nav li:hover ul {
     display: block;
   }
-
+  
   nav li ul li {
     font-weight: normal;
     margin: 5px 0;
     font-size: 1em;
     white-space: nowrap;
   }
-
+  
   nav li ul li:hover {
     color: #005098;
   }
+  
+  /*ABOUT US*/
+  .content {
+    float: right;
+    width: 50%;
+    padding: 20px;
+  }
+
+  .contentHead {
+    font-size: 50px;
+    font-weight: 50;
+    margin-bottom: 20px;
+  }
+
+  .imgbody {
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 100px;
+    max-width: 100%;
+  }
+
+  .margen {
+    margin-bottom: 20px;
+  }
 }
 
-/*ABOUT US*/
-.content {
-  float: right;
-  width: 50%;
-  padding: 20px;
-}
-
-.contentHead {
-  font-size: 50px;
-  font-weight: 50;
-}
 
 /*FOOTER*/
 footer {
