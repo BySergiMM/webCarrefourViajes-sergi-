@@ -15,7 +15,9 @@ body {
   overflow-x: hidden;
 }
 
-
+.mensajes {
+  text-align: center;
+}
 
 /*LISTA HEADER*/
 
