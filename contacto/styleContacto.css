@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-.mensajes {
+#mensaje {
   text-align: center;
 }
 
