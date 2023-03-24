@@ -27,10 +27,9 @@
 
         // Envía el mensaje de correo electrónico
         if (mail($to, $subject, $email_body, $headers)) {
-            header('Location: contacto.html?mensaje=Mensaje enviado correctamente');
-
+            header('Location: contacto.html?mensaje=Mensaje enviado correctamente&color=green');
         } else {
-            header('Location: contacto.html?mensaje=Error al enviar el mensaje');
+            header('Location: contacto.html?mensaje=Error al enviar el mensaje&color=red');
         }
     }
 ?>

@@ -11,9 +11,11 @@
   <script>
     window.onload = function () {
         var mensaje = getParameterByName('mensaje');
+        var color = getParameterByName('color');
         if (mensaje !== null) {
             var mensajeDiv = document.getElementById('mensaje');
             mensajeDiv.innerHTML = mensaje;
+            mensajeDiv.style.color = color; // Establece el color del mensaje
             setTimeout(function () {
                 mensajeDiv.innerHTML = '';
             }, 5000); // Oculta el mensaje después de 5 segundos
@@ -29,6 +31,7 @@
         if (!results[2]) return '';
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
+
 </script>
 </head>
 
@@ -94,8 +97,7 @@
 
 <body>
     <hr>
-    <div id="mensaje" class="mensajes"></div>
-
+    <div id="mensaje"></div>
     <div class="contact-wrapper container">
         <h2 class="section-header titulo">Contacto</h2>
         <form id="contact-form" class="form-horizontal" role="form" method="post" action="send_mail.php">
@@ -134,6 +136,7 @@
             <div id="thank-you-message" class="alert alert-success" role="alert" style="display: none;">¡Gracias por
                 contactarnos! Te responderemos lo antes posible.</div>
         </form>
+        
     </div>
 </body>
 
