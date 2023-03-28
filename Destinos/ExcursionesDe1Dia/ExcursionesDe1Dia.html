@@ -71,8 +71,111 @@
 </header>
 
 <body>
-    <hr>
+  <hr>
+
+  <div class="content-section">
+    <p class="ptitulo">Excursiones de 1 dia</p>
+    <p class="pinfo">Haga click en el texto para ver mas informacion</p>
+
+    <div class="card-wrapper">
+
+      <div class="card" style="background-image: url('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/imgPaquetes/PaisajePedraforca.png')">
+        <a class="container" href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/PaisatgesPedraforca.pdf" target="_blank"
+          onclick="saveDownloadUrl('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/PaisatgesPedraforca.pdf')">
+          <div>
+            <h3><b>Paisajes del Pedraforca</b></h3>
+            <p><b>Excursion de 1 dia</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/imgPaquetes/FiraMedievalHostalric.png')">
+        <a class="container" href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/GranDiraMedievalHostalric.pdf" target="_blank"
+          onclick="saveDownloadUrl('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/GranDiraMedievalHostalric.pdf')">
+          <div>
+            <h3><b>Gran geria medieval Hostalric</b></h3>
+            <p><b>Excursion de 1 dia</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/imgPaquetes/BegetCastellfollitRoca.png')">
+        <a class="container" href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/imgPaquetes/BegetCastellfollitRoca.png" target="_blank"
+          onclick="saveDownloadUrl('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/BegetCastellfollirRoca.pdf')">
+          <div>
+            <h3><b>Beget y Castellfollit de la roca</b></h3>
+            <p><b>Excursion de 1 dia</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/imgPaquetes/GeronaTiempoDeFlores.png')">
+        <a class="container" href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/GeronaTiempoFlores.pdf" target="_blank"
+        onclick="saveDownloadUrl('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/GeronaTiempoFlores.pdf')">
+        <div>
+            <h3><b>Gerona tiempo de flores</b></h3>
+            <p><b>Excursion de 1 dia</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/imgPaquetes/TossaDeMar.png')">
+        <a class="container" href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/TossaDeMarDinarMariscada.pdf" target="_blank"
+          onclick="saveDownloadUrl('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/TossaDeMarDinarMariscada.pdf')">
+          <div>
+            <h3><b>Tossa de mar y comida de mariscada</b></h3>
+            <p><b>Excursion de 1 dia</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/imgPaquetes/IslasMedes.png')">
+        <a class="container" href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/EstartitIllesMedes.pdf" target="_blank"
+          onclick="saveDownloadUrl('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/EstartitIllesMedes.pdf')">
+          <div>
+            <h3><b>Estartido i Illes Medes</b></h3>
+            <p><b>Excursión de 1 día</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/imgPaquetes/Cadaques.png')">
+        <a class="container" href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/RosesCreuerCadaques.pdf" target="_blank"
+          onclick="saveDownloadUrl('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/RosesCreuerCadaques.pdf')">
+          <div>
+            <h3><b>Rosas y Crucero en Cadaqués</b></h3>
+            <p><b>Excursión de 1 día</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/imgPaquetes/DeltaDelEbro.png')">
+        <a class="container" href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/CreuerDeltaEbreMariscada.pdf" target="_blank"
+          onclick="saveDownloadUrl('/Destinos/ExcursionesDe1Dia/ExcursionesDe1DiaPacks/CreuerDeltaEbreMariscada.pdf')">
+          <div>
+            <h3><b>Crucero Delta del Ebro con Mariscada</b></h3>
+            <p><b>Excursión de 1 día</b></p>
+          </div>
+        </a>
+      </div>
+
+      <script>
+        var downloadUrl = '';
+
+        function saveDownloadUrl(url) {
+          downloadUrl = url;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+          if (window.opener && window.opener.showDownloadNotification && downloadUrl !== '') {
+            window.opener.showDownloadNotification(downloadUrl);
+          }
+        });
+      </script>
+    </div>
+  </div>
 </body>
+
 <!--------------------------     FOOTER     -------------------------->
 <footer>
   <div class="columnas">
