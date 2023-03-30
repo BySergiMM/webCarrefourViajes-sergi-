@@ -10,134 +10,131 @@
   <link rel="shortcut icon" href="Img/LogoCarrefourViajes.png" />
   <script>
     window.onload = function () {
-        var mensaje = getParameterByName('mensaje');
-        var color = getParameterByName('color');
-        if (mensaje !== null) {
-            var mensajeDiv = document.getElementById('mensaje');
-            mensajeDiv.innerHTML = mensaje;
-            mensajeDiv.style.color = color; // Establece el color del mensaje
-            setTimeout(function () {
-                mensajeDiv.innerHTML = '';
-            }, 5000); // Oculta el mensaje después de 5 segundos
-        }
+      var mensaje = getParameterByName('mensaje');
+      var color = getParameterByName('color');
+      if (mensaje !== null) {
+        var mensajeDiv = document.getElementById('mensaje');
+        mensajeDiv.innerHTML = mensaje;
+        mensajeDiv.style.color = color; // Establece el color del mensaje
+        setTimeout(function () {
+          mensajeDiv.innerHTML = '';
+        }, 5000); // Oculta el mensaje después de 5 segundos
+      }
     };
 
     function getParameterByName(name) {
-        var url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-        var results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      var url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+      var results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
 
-</script>
+  </script>
 </head>
 
 <!--------------------------     HEADER     -------------------------->
 <header>
-    <a href="/index.html">
-        <h1>Viajes Nalanda</h1>
-    </a>
+  <a href="/index.html">
+    <h1>Viajes Nalanda</h1>
+  </a>
 
-    <nav role='navigation'>
-        <div id="menuToggle">
+  <nav role='navigation'>
+    <div id="menuToggle">
 
-            <input type="checkbox" />
+      <input type="checkbox" />
 
-            <span></span>
-            <span></span>
-            <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
 
-            <ul id="menu">
-                <a href="/index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="#">
-                    <li>Destinos
-                        <ul>
-                            <a href="/Destinos/SalidasEspeciales/SalidasEspeciales.html">
-                                <li>Salidas especiales</li>
-                            </a>
-                            <a href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1Dia.html">
-                                <li>Excursiones de 1 dia</li>
-                            </a>
-                            <a href="/Destinos/FinDeSemana/FinDeSemana.html">
-                                <li>Fin de semana</li>
-                            </a>
-                            <a href="/Destinos/Escapadas/Escapadas.html">
-                                <li>Escapadas</li>
-                            </a>
-                            <a href="/Destinos/Puentes/Puentes.html">
-                                <li>Puentes</li>
-                            </a>
-                            <a href="/Destinos/EstadesCircuitosNacionales/EstadesCircuitosNacionales.html">
-                                <li>Estancias</li>
-                            </a>
-                            <a href="/Destinos/CircuitosNacionales/CircuitosNacionales.html">
-                                <li>Circuitos nacionales</li>
-                            </a>
-                            <a href="/Destinos/CircuitosInternacionales/CircuitosInternacionales.html">
-                                <li>Circuitos internacionales</li>
-                            </a>
-                        </ul>
-                    </li>
-                </a>
-                <a href="/QuienesSomos/quienessomos.html">
-                    <li>Quienes somos</li>
-                </a>
-                <a href="contacto.html">
-                    <li>Contacto</li>
-                </a>
+      <ul id="menu">
+        <a href="/index.html">
+          <li>Inicio</li>
+        </a>
+        <a href="#">
+          <li>Destinos
+            <ul>
+              <a href="/Destinos/SalidasEspeciales/SalidasEspeciales.html">
+                <li>Salidas especiales</li>
+              </a>
+              <a href="/Destinos/ExcursionesDe1Dia/ExcursionesDe1Dia.html">
+                <li>Excursiones de 1 dia</li>
+              </a>
+              <a href="/Destinos/FinDeSemana/FinDeSemana.html">
+                <li>Fin de semana</li>
+              </a>
+              <a href="/Destinos/Escapadas/Escapadas.html">
+                <li>Escapadas</li>
+              </a>
+              <a href="/Destinos/Puentes/Puentes.html">
+                <li>Puentes</li>
+              </a>
+              <a href="/Destinos/EstadesCircuitosNacionales/EstadesCircuitosNacionales.html">
+                <li>Estancias</li>
+              </a>
+              <a href="/Destinos/CircuitosNacionales/CircuitosNacionales.html">
+                <li>Circuitos nacionales</li>
+              </a>
+              <a href="/Destinos/CircuitosInternacionales/CircuitosInternacionales.html">
+                <li>Circuitos internacionales</li>
+              </a>
             </ul>
-        </div>
-    </nav>
+          </li>
+        </a>
+        <a href="/QuienesSomos/quienessomos.html">
+          <li>Quienes somos</li>
+        </a>
+        <a href="contacto.html">
+          <li>Contacto</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
 </header>
 
 <body>
-    <hr>
-    <div id="mensaje"></div>
-    <div class="contact-wrapper container">
-        <h2 class="section-header titulo">Contacto</h2>
-        <form id="contact-form" class="form-horizontal" role="form" method="post" action="send_mail.php">
-            <div class="form-group">
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="name" placeholder="  Nombre" name="name" value=""
-                        required>
-                </div>
-            </div>
+  <hr>
+  <div id="mensaje"></div>
+  <div class="contact-wrapper container">
+    <h2 class="section-header titulo">Contacto</h2>
+    <form id="contact-form" class="form-horizontal" role="form" method="post" action="send_mail.php">
+      <div class="form-group">
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="name" placeholder="  Nombre" name="name" value="" required>
+        </div>
+      </div>
 
-            <div class="form-group">
-                <div class="col-sm-6">
-                    <input type="email" class="form-control" id="email" placeholder="  Email" name="email" value=""
-                        required>
-                </div>
-            </div>
+      <div class="form-group">
+        <div class="col-sm-6">
+          <input type="email" class="form-control" id="email" placeholder="  Email" name="email" value="" required>
+        </div>
+      </div>
 
-            <div class="form-group">
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="subject" placeholder="  Asunto" name="subject" value=""
-                        required>
-                </div>
-            </div>
+      <div class="form-group">
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="subject" placeholder="  Asunto" name="subject" value="" required>
+        </div>
+      </div>
 
-            <div class="form-group">
-                <div class="col-sm-6">
-                    <textarea type="text" class="form-control" rows="10" placeholder="  Mensaje" name="message"
-                        style="resize:none;" required></textarea>
-                </div>
-            </div>
-            <button class="button " id="submit" type="submit" name="submit">
-                <div class="alt-send-button">
-                    <i class="fa fa-paper-plane"></i><span class="send-text">Enviar</span>
-                </div>
-            </button>
-            <div id="thank-you-message" class="alert alert-success" role="alert" style="display: none;">¡Gracias por
-                contactarnos! Te responderemos lo antes posible.</div>
-        </form>
-        
-    </div>
+      <div class="form-group">
+        <div class="col-sm-6">
+          <textarea type="text" class="form-control" rows="10" placeholder="  Mensaje" name="message"
+            style="resize:none;" required></textarea>
+        </div>
+      </div>
+      <button class="button " id="submit" type="submit" name="submit">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">Enviar</span>
+        </div>
+      </button>
+      <div id="thank-you-message" class="alert alert-success" role="alert" style="display: none;">¡Gracias por
+        contactarnos! Te responderemos lo antes posible.</div>
+    </form>
+
+  </div>
 </body>
 
 
