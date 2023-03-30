@@ -71,8 +71,128 @@
 </header>
 
 <body>
-    <hr>
+  <hr>
+
+  <div class="content-section">
+    <p class="ptitulo">Escapadas</p>
+    <p class="pinfo">Haga click en el texto para ver mas informacion</p>
+
+    <div class="card-wrapper">
+
+      <div class="card"
+        style="background-image: url('EscapadasPacks/imgEscapadas/Panticosa.png')">
+        <a class="container" href=""
+          target="_blank"
+          onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>Panticosa - Valle de Ordesa - San Juan de la Peña</b></h3>
+            <p><b>Escapadas</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card"
+        style="background-image: url('EscapadasPacks/imgEscapadas/Vielha.png')">
+        <a class="container" href=""
+          target="_blank"
+          onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>Vielha - Bagneres de Luchon - Bossost - Salardú</b></h3>
+            <p><b>Escapadas</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card"
+        style="background-image: url('EscapadasPacks/imgEscapadas/Rosas.png')">
+        <a class="container"
+          href=""
+          target="_blank"
+          onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>Roses - Maternidad de Elna - Cadaqués</b></h3>
+            <p><b>Escapadas</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card"
+        style="background-image: url('EscapadasPacks/imgEscapadas/RosesVerbena.png')">
+        <a class="container" href=""
+          target="_blank"
+          onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>Verbena San Juan en Roses</b></h3>
+            <p><b>Escapadas</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card"
+        style="background-image: url('EscapadasPacks/imgEscapadas/MangaMarMenor.png')">
+        <a class="container" href=""
+          target="_blank"
+          onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>La Manga del Mar Menor - Verano</b></h3>
+            <p><b>Escapadas</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card"
+        style="background-image: url('EscapadasPacks/imgEscapadas/Valencia.png')">
+        <a class="container" href=""
+          target="_blank"
+          onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>Valencia - Ciudad de las Artes</b></h3>
+            <p><b>Escapadas</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card"
+      style="background-image: url('EscapadasPacks/imgEscapadas/DeltaEbro.png')">
+      <a class="container" href=""
+        target="_blank"
+        onclick="saveDownloadUrl('')">
+        <div>
+          <h3><b>Delta del Ebro y Crucero con Mariscada</b></h3>
+          <p><b>Escapadas</b></p>
+        </div>
+      </a>
+    </div>
+
+      <div class="card"
+        style="background-image: url('EscapadasPacks/imgEscapadas/MangaMarMenor.png')">
+        <a class="container" href=""
+          target="_blank"
+          onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>La Manga del Mar Menor - Puente del Pilar</b></h3>
+            <p><b>Escapadas</b></p>
+          </div>
+        </a>
+      </div>
+
+      <script>
+        var downloadUrl = '';
+
+        function saveDownloadUrl(url) {
+          downloadUrl = url;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+          if (window.opener && window.opener.showDownloadNotification && downloadUrl !== '') {
+            window.opener.showDownloadNotification(downloadUrl);
+          }
+        });
+      </script>
+    </div>
+  </div>
 </body>
+
 <!--------------------------     FOOTER     -------------------------->
 <footer>
   <div class="columnas">

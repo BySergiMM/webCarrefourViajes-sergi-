@@ -71,8 +71,72 @@
 </header>
 
 <body>
-    <hr>
+  <hr>
+
+  <div class="content-section">
+    <p class="ptitulo">Puentes</p>
+    <p class="pinfo">Haga click en el texto para ver mas informacion</p>
+
+    <div class="card-wrapper">
+
+      <div class="card" style="background-image: url('/Destinos/Escapadas/EscapadasPacks/imgEscapadas/Panticosa.png')">
+        <a class="container" href=""
+          target="_blank"
+          onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>Panticosa - Valle de Ordesa - San Juan de la Peña</b></h3>
+            <p><b>Escapadas</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/Escapadas/EscapadasPacks/imgEscapadas/Vielha.png')">
+        <a class="container" href="" target="_blank" 
+        onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>Vielha - Bagneres de Luchon - Bossost - Salardú</b></h3>
+            <p><b>Puentes</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/Escapadas/EscapadasPacks/imgEscapadas/Rosas.png')">
+        <a class="container" href="" target="_blank" 
+        onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>Roses - Maternidad de Elna - Cadaqués</b></h3>
+            <p><b>Puentes</b></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="background-image: url('/Destinos/Escapadas/EscapadasPacks/imgEscapadas/MangaMarMenor.png')">
+        <a class="container" href="" target="_blank" 
+        onclick="saveDownloadUrl('')">
+          <div>
+            <h3><b>La Manga del Mar Menor - Puente del Pilar</b></h3>
+            <p><b>Puentes</b></p>
+          </div>
+        </a>
+      </div>
+
+      <script>
+        var downloadUrl = '';
+
+        function saveDownloadUrl(url) {
+          downloadUrl = url;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+          if (window.opener && window.opener.showDownloadNotification && downloadUrl !== '') {
+            window.opener.showDownloadNotification(downloadUrl);
+          }
+        });
+      </script>
+    </div>
+  </div>
 </body>
+
 <!--------------------------     FOOTER     -------------------------->
 <footer>
   <div class="columnas">
