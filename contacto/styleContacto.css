@@ -111,6 +111,7 @@ h1 {
   }
 
   #menuToggle span:first-child {
+    display: none;
     transform-origin: 0% 0%;
   }
 
