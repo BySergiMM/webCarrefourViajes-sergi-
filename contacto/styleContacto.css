@@ -1,9 +1,4 @@
-/*
-colores
-color azul logo = #005098
-color azul flojo logo = #00a7df
-color azul footer = #8FBAD8
-*/
+
 html {
   overflow-x: hidden;
 }
@@ -19,7 +14,6 @@ body {
   text-align: center;
 }
 
-/*LISTA HEADER*/
 
 header {
   display: flex;
@@ -37,7 +31,6 @@ h1 {
   margin: 0;
 }
 
-/*PARA MOVIL*/
 @media screen and (max-width: 768px) {
   #menu {
     position: absolute;
@@ -148,9 +141,20 @@ h1 {
   .titulo {
     font-size: 2em;
   }
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+  }
+
 }
 
-/*PARA PC*/
 @media screen and (min-width: 768px) {
   #menuToggle input[type="checkbox"] {
     display: none;
@@ -195,6 +199,8 @@ h1 {
     border-left: 1px solid #868686;
     border-right: 1px solid #868686;
     border-top: 1px solid #868686;
+    border-bottom: 1px solid #868686;
+
   }
 
   nav li:hover ul {
@@ -215,10 +221,20 @@ h1 {
   .titulo {
     font-size: 2.5em;
   }
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    width: 60%;
+  }
 }
 
 
-/*FOOTER*/
 footer {
   background-color: #8fbad8;
   color: black;
@@ -226,7 +242,6 @@ footer {
   text-align: center;
 }
 
-/*-------------------     HORARIO    -------------------*/
 table {
   margin-top: 20px;
   border-collapse: collapse;
@@ -243,7 +258,6 @@ td:first-child {
   font-weight: bold;
 }
 
-/*-------------------     HORARIO    -------------------*/
 .columna {
   flex: 1;
   margin: 0 10px;
@@ -256,7 +270,6 @@ td:first-child {
   text-align: center;
 }
 
-/*-------------------     CONTACTOS    -------------------*/
 .contactos {
   list-style: none;
   margin: 0;
@@ -268,16 +281,7 @@ td:first-child {
   margin-right: 10px;
 }
 
-.contact-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  width: 80%;
-}
+
 
 .form-horizontal {
   width: 100%;
