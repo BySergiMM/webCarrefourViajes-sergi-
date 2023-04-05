@@ -25,7 +25,7 @@ h1 {
     margin: 0;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
     #menu {
         position: absolute;
         width: 360px;
@@ -146,7 +146,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
     #menuToggle input[type="checkbox"] {
         display: none;
     }
@@ -233,7 +233,22 @@ h1 {
     .margen {
         margin-bottom: 20px;
     }
+
 }
+@media screen and (max-width: 1424px) {
+    .imgbody {
+      display: none;
+    }
+    section {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+  
 
 footer {
     background-color: #8fbad8;
