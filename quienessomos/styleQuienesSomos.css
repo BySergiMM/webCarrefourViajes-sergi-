@@ -129,6 +129,7 @@ h1 {
     .fondo {
         background-color: #d6ebf1;
         padding-bottom: 20px;
+        display: block;
     }
 
     .contentHead {
@@ -191,7 +192,6 @@ h1 {
         border-right: 1px solid #868686;
         border-top: 1px solid #868686;
         border-bottom: 1px solid #868686;
-
     }
 
     nav li:hover ul {
@@ -224,9 +224,6 @@ h1 {
 
     .imgbody {
         width: 500px;
-        height: auto;
-        margin-left: 120px;
-        margin-top: 50px;
         max-width: 100%;
     }
 
@@ -235,20 +232,6 @@ h1 {
     }
 
 }
-@media screen and (max-width: 1424px) {
-    .imgbody {
-      display: none;
-    }
-    section {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-  }
-  
 
 footer {
     background-color: #8fbad8;
