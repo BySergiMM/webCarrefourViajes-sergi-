@@ -221,7 +221,7 @@ header {
     }
 
     .contenedor {
-        background-image: url("Img/imgFondoBlog.webp");
+        background-image: url("img/imgFondoBlog.webp");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
