@@ -1,22 +1,17 @@
 <?php
-    // Revisa si se envió el formulario
     if (isset($_POST['submit'])) {
-        // Recoge los datos del formulario
         $name = $_POST['name'];
         $email = $_POST['email'];
         $subject = $_POST['subject'];
         $message = $_POST['message'];
 
-        // Dirección de correo a la que se enviará el mensaje
         $to = "vnalandasb@gmail.com";
 
-        // Cabeceras del correo electrónico
         $headers = "From: $name <$email>" . "\r\n";
         $headers .= "Reply-To: $email" . "\r\n";
         $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
         $email_body = "<p>$message</p>";
 
-        // Envía el mensaje de correo electrónico
         if (mail($to, $subject, $email_body, $headers)) {
             header('Location: contacto.html?mensaje=Mensaje enviado correctamente&color=green');
         } else {
