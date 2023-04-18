@@ -72,31 +72,46 @@
         <h2 class="section-header titulo">Contacto</h2>
         <form id="contact-form" class="form-horizontal" role="form" method="post" action="send_mail.php">
             <div class="form-group">
-                <div class="col-sm-6"> <input type="text" class="form-control" id="name" placeholder=" Nombre"
-                        name="name" value="" required> </div>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" placeholder=" Nombre" name="name" value=""
+                        required>
+                </div>
             </div>
             <div class="form-group">
-                <div class="col-sm-6"> <input type="email" class="form-control" id="email" placeholder=" Email"
-                        name="email" value="" required> </div>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" id="email" placeholder=" Email" name="email" value=""
+                        required>
+                </div>
             </div>
+
             <div class="form-group">
-                <div class="col-sm-6"> <input type="text" class="form-control" id="subject" placeholder=" Asunto"
-                        name="subject" value="" required> </div>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" id="phone" placeholder=" Teléfono" name="phone" value=""
+                        required>
+                </div>
             </div>
+
             <div class="form-group">
-                <div class="col-sm-6"> <textarea type="text" class="form-control" rows="10" placeholder=" Mensaje"
-                        name="message" style="resize:none;" required></textarea> </div>
-            </div><button class="button " id="submit" type="submit" name="submit">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="subject" placeholder=" Asunto" name="subject" value=""
+                        required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-6">
+                    <textarea type="text" class="form-control" rows="10" placeholder=" Mensaje" name="message"
+                        style="resize:none;" required></textarea>
+                </div>
+            </div>
+            <button class="button " id="submit" type="submit" name="submit">
                 <div class="alt-send-button"> <i class="fa fa-paper-plane"></i><span class="send-text">Enviar</span>
                 </div>
             </button>
-            <div id="thank-you-message" class="alert alert-success" role="alert" style="display: none;">
-                ¡Gracias por contactarnos! Te responderemos lo antes posible.
-            </div>
-            
         </form>
     </div>
 </body>
+
 <footer>
     <div class="columnas">
         <div class="columna">
