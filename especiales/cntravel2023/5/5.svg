@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 909 1286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="c0_5"><path d="M380.3,438V334.3H54.9V438ZM26,475.7V34.6H883.5V475.7Z"/></clipPath>
+<clipPath id="c1_5"><path d="M54.9,386.3v-52H163.5v52Z"/></clipPath>
+<clipPath id="c2_5"><path d="M163.3,386.3v-52H271.9v52Z"/></clipPath>
+<clipPath id="c3_5"><path d="M271.8,386.3v-52H380.3v52Z"/></clipPath>
+<clipPath id="c4_5"><path d="M54.9,438V386.1H163.5V438Z"/></clipPath>
+<clipPath id="c5_5"><path d="M163.3,438V386.1H271.9V438Z"/></clipPath>
+<clipPath id="c6_5"><path d="M271.8,438V386.1H380.3V438Z"/></clipPath>
+<style type="text/css"><![CDATA[
+.g0_5{
+fill: #58595B;
+}
+.g1_5{
+fill: #FFF;
+}
+]]></style>
+</defs>
+<image clip-path="url(#c0_5)" preserveAspectRatio="none" x="26" y="35" width="857" height="441" xlink:href="img/1.jpg"/>
+<path d="M43.3,1230.9H418.8v-.6H43.3v.6Z" class="g0_5"/>
+<path d="M837.7,661.2h28.4v-.5H837.7v.5Z" class="g0_5"/>
+<path d="M463.4,677.3H692.3v-.6H463.4v.6Z" class="g0_5"/>
+<image clip-path="url(#c1_5)" preserveAspectRatio="none" x="55" y="334" width="108" height="52" xlink:href="img/2.jpg"/>
+<image clip-path="url(#c2_5)" preserveAspectRatio="none" x="163" y="334" width="109" height="52" xlink:href="img/3.jpg"/>
+<image clip-path="url(#c3_5)" preserveAspectRatio="none" x="272" y="334" width="109" height="52" xlink:href="img/4.jpg"/>
+<image clip-path="url(#c4_5)" preserveAspectRatio="none" x="55" y="386" width="108" height="52" xlink:href="img/5.jpg"/>
+<image clip-path="url(#c5_5)" preserveAspectRatio="none" x="163" y="386" width="109" height="52" xlink:href="img/6.jpg"/>
+<image clip-path="url(#c6_5)" preserveAspectRatio="none" x="272" y="386" width="109" height="52" xlink:href="img/7.jpg"/>
+<path d="M0,0V1286.2Z" class="g1_5"/>
+<path d="M0,1286.2H19.5V0H0V1286.2Z" class="g1_5"/>
+</svg>
