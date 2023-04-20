@@ -1,8 +1,0 @@
-# HTID:21129195: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
-php_value display_errors 0
-# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:21129195:
-<IfModule mod_headers.c>
-    <FilesMatch "\.(css|webp|jpg)$">
-        Header set Cache-Control "max-age=604800, public"
-    </FilesMatch>
-</IfModule>
