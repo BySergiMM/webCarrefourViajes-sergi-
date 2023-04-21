@@ -429,3 +429,7 @@ td:first-child {
         background-image: url('/especiales/cnTravelP.webp');
     }
 }
+
+.salidas{
+    font-size: 90%;
+}
