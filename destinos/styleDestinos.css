@@ -418,18 +418,6 @@ td:first-child {
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-    .mi-clase {
-        background-image: url('/especiales/cnTravelPMovil.webp');
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .mi-clase {
-        background-image: url('/especiales/cnTravelP.webp');
-    }
-}
-
 .salidas{
     font-size: 90%;
 }
