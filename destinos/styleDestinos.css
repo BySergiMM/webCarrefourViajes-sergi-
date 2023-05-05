@@ -209,14 +209,7 @@ h1 {
         font-size: 18px;
         line-height: 1.5;
     }
-
-    footer {
-        background-color: #8fbad8;
-        color: black;
-        padding: 20px;
-        text-align: center;
-    }
-
+    
     .contenedor {
         background-image: url("Img/imgFondoBlog.jpg");
         background-size: cover;
@@ -242,13 +235,6 @@ h1 {
     section p {
         font-size: 18px;
         line-height: 1.5;
-    }
-
-    footer {
-        background-color: #8fbad8;
-        color: black;
-        padding: 20px;
-        text-align: center;
     }
 
     .contenedor {
@@ -379,45 +365,95 @@ h1 {
     }
 }
 
+footer {
+    background-color: #8fbad8;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.columnas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 75px;
+    margin-left: 75px;
+    width: 100%;
+}
+
+.columna {
+    display: inline-table;
+    width: 300px;
+    max-height: 200px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.columna>h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+iframe {
+    border: none;
+    width: 280px;
+    height: 200px;
+}
+
 table {
-    margin-top: 20px;
-    border-collapse: collapse;
+    border: none;
     width: 100%;
 }
 
 th,
 td {
-    padding: 6px;
     text-align: center;
 }
 
-td:first-child {
-    font-weight: bold;
+@media only screen and (max-width: 767px) {
+    .horario {
+        display: none;
+        max-width: 0;
+    }
+
+    .contacto {
+        display: block;
+    }
+
+    .mapa {
+        margin-top: 10px;
+        height: 300px;
+    }
+
+    .columnas {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: 75px;
+        margin-left: 75px;
+    }
 }
 
-.columna {
-    flex: 1;
-    margin: 0 10px;
+@media only screen and (min-width: 767px) {
+    .columnas {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
 }
 
-.columnas {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    text-align: center;
+#miDiv {
+    clear: both;
+    font-size: 13px;
 }
-
-.contactos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.contacto {
-    margin-right: 10px;
-}
-
 .salidas{
     font-size: 90%;
 }
