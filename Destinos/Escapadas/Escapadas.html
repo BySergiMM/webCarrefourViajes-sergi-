@@ -14,10 +14,12 @@
         <div id="menuToggle"> <input type="checkbox" /> <span></span> <span></span> <span></span>
             <ul id="menu"> <a href="/index.html">
                     <li>Inicio</li>
-                </a> <a href=" ">
+                </a> <a>
                     <li>Destinos<span class="dropdown-icon">&#9662;</span>
                         <ul> <a href="/destinos/salidasespeciales/salidas_especiales.html">
                                 <li>Salidas especiales</li>
+                            </a> <a href="/destinos/catalogo/catalogo.html">
+                                <li>Catalogos</li>
                             </a> <a href="/destinos/excursionesde1dia/excursiones_de_1_dia.html">
                                 <li>Excursiones de 1 dia</li>
                             </a> <a href="/destinos/findesemana/fin_de_semana.html">
@@ -49,7 +51,37 @@
         <p class="ptitulo">Escapadas</p>
         <p class="pinfo">Haga click en el texto para ver mas informacion</p>
         <div class="card-wrapper">
-            <div class="card" style="background-image: url('escapadaspacks/imgEscapadas/panticosa.webp')"> <a
+
+            <div class="card" style="background-image: url('EscapadasPacks/imgEscapadas/santjoan_carcassonne.webp')"> <a
+                    class="container" href="EscapadasPacks/fuegos-de-sant-joan-en-barco-carcassonne-y-collioure.pdf"
+                    target="_blank" onclick="saveDownloadUrl('EscapadasPacks/vielha.pdf')">
+                    <div>
+                        <h3><b>Sant Juan en carassonne y colliure</b></h3>
+                        <p><b>Escapadas</b></p>
+                        <p class="salidas"><b>Salidas: 23/06</b></p>
+                    </div>
+                </a> </div>
+
+            <div class="card" style="background-image: url('EscapadasPacks/imgEscapadas/santjoan_matarrana.webp')"> <a
+                    class="container" href="EscapadasPacks/sant-joan-al-matarrana-i-la-terra-alta.pdf" target="_blank"
+                    onclick="saveDownloadUrl('EscapadasPacks/sant-joan-al-matarrana-i-la-terra-alta.pdf')">
+                    <div>
+                        <h3><b>Sant Juan en Matarraña y la tierra alta</b></h3>
+                        <p><b>Escapadas</b></p>
+                        <p class="salidas"><b>Salidas: 23/06</b></p>
+                    </div>
+                </a> </div>
+            <div class="card" style="background-image: url('EscapadasPacks/imgEscapadas/santjoan_valldaran.webp')"> <a
+                    class="container" href="EscapadasPacks/sant-joan-a-la-vall-d-aran-i-la-vall-de-boi.pdf"
+                    target="_blank" onclick="saveDownloadUrl('EscapadasPacks/vielha.pdf')">
+                    <div>
+                        <h3><b>Sant Juan en Vall D'Aran y en Vall de Boi</b></h3>
+                        <p><b>Escapadas</b></p>
+                        <p class="salidas"><b>Salidas: 23/06</b></p>
+                    </div>
+                </a> </div>
+
+            <div class="card" style="background-image: url('EscapadasPacks/imgEscapadas/panticosa.webp')"> <a
                     class="container"
                     href="/destinos/circuitosnacionales/circuitosnacionalespacks/PanticosaValleOrdesaSanJuanPena.pdf"
                     target="_blank"
@@ -57,66 +89,49 @@
                     <div>
                         <h3><b>Panticosa - Valle de Ordesa - San Juan de la Peña</b></h3>
                         <p><b>Escapadas</b></p>
-                        <p class="salidas"><b>Salidas: 29/04, 03/06, 09/09</b></p>
+                        <p class="salidas"><b>Salidas: 09/09</b></p>
                     </div>
                 </a> </div>
-            <div class="card" style="background-image: url('escapadaspacks/imgEscapadas/vielha.webp')"> <a
-                    class="container" href="escapadaspacks/vielha.pdf" target="_blank"
-                    onclick="saveDownloadUrl('escapadaspacks/vielha.pdf')">
+            <div class="card" style="background-image: url('EscapadasPacks/imgEscapadas/vielha.webp')"> <a
+                    class="container" href="EscapadasPacks/vielha.pdf" target="_blank"
+                    onclick="saveDownloadUrl('EscapadasPacks/vielha.pdf')">
                     <div>
                         <h3><b>Vielha - Bagneres de Luchon - Bossost - Salardú</b></h3>
                         <p><b>Escapadas</b></p>
-                        <p class="salidas"><b>Salidas: 29/04, 22/09</b></p>
+                        <p class="salidas"><b>Salidas: 22/09</b></p>
                     </div>
                 </a> </div>
-            <div class="card" style="background-image: url('escapadaspacks/imgEscapadas/rosas.webp')"> <a
-                    class="container" href="escapadaspacks/RosesMaternitatElnaCadaques.pdf" target="_blank"
-                    onclick="saveDownloadUrl('escapadaspacks/RosesMaternitatElnaCadaques.pdf')">
-                    <div>
-                        <h3><b>Roses - Maternidad de Elna - Cadaqués</b></h3>
-                        <p><b>Escapadas</b></p>
-                        <p class="salidas"><b>Salidas: 29/04</b></p>
-                    </div>
-                </a> </div>
-            <div class="card" style="background-image: url('escapadaspacks/imgEscapadas/rosesverbena.webp')"> <a
-                    class="container" href="escapadaspacks/RevetllaSantJoanRoses.pdf" target="_blank"
-                    onclick="saveDownloadUrl('escapadaspacks/RevetllaSantJoanRoses.pdf')">
+            <div class="card" style="background-image: url('EscapadasPacks/imgEscapadas/rosesverbena.webp')"> <a
+                    class="container" href="EscapadasPacks/RevetllaSantJoanRoses.pdf" target="_blank"
+                    onclick="saveDownloadUrl('EscapadasPacks/RevetllaSantJoanRoses.pdf')">
                     <div>
                         <h3><b>Verbena San Juan en Roses</b></h3>
                         <p><b>Escapadas</b></p>
                         <p class="salidas"><b>Salidas: 23/06</b></p>
                     </div>
                 </a> </div>
-            <div class="card" style="background-image: url('escapadaspacks/imgEscapadas/mangamarmenor.webp')"> <a
-                    class="container" href="escapadaspacks/LaMangaMarMenor-Verano.pdf" target="_blank"
-                    onclick="saveDownloadUrl('escapadaspacks/LaMangaMarMenor-Verano.pdf')">
+            <div class="card" style="background-image: url('EscapadasPacks/imgEscapadas/mangamarmenor.webp')"> <a
+                    class="container" href="EscapadasPacks/LaMangaMarMenor-Verano.pdf" target="_blank"
+                    onclick="saveDownloadUrl('EscapadasPacks/LaMangaMarMenor-Verano.pdf')">
                     <div>
                         <h3><b>La Manga del Mar Menor - Verano</b></h3>
                         <p><b>Escapadas</b></p>
                         <p class="salidas"><b>Salidas: 13/07, 22/09</b></p>
                     </div>
                 </a> </div>
-            <div class="card" style="background-image: url('escapadaspacks/imgEscapadas/valencia.webp')"> <a
-                    class="container" href="escapadaspacks/ValenciaCiudadArtes.pdf" target="_blank"
-                    onclick="saveDownloadUrl('escapadaspacks/ValenciaCiudadArtes.pdf')">
+            <div class="card" style="background-image: url('EscapadasPacks/imgEscapadas/valencia.webp')"> <a
+                    class="container" href="EscapadasPacks/ValenciaCiudadArtes.pdf" target="_blank"
+                    onclick="saveDownloadUrl('EscapadasPacks/ValenciaCiudadArtes.pdf')">
                     <div>
                         <h3><b>Valencia - Ciudad de las Artes</b></h3>
                         <p><b>Escapadas</b></p>
                         <p class="salidas"><b>Salidas: 27/07, 22/09, 12/10</b></p>
                     </div>
                 </a> </div>
-            <div class="card" style="background-image: url('escapadaspacks/imgEscapadas/deltaebro.webp')"> <a
-                    class="container" href="escapadaspacks/DeltaEbreCruceroMariscada.pdf" target="_blank"
-                    onclick="saveDownloadUrl('escapadaspacks/DeltaEbreCruceroMariscada.pdf')">
-                    <div>
-                        <h3><b>Delta del Ebro y Crucero con Mariscada</b></h3>
-                        <p><b>Escapadas</b></p>
-                        <p class="salidas"><b>Salidas: 16/06</b></p>
-                    </div>
-                </a> </div>
-            <div class="card" style="background-image: url('escapadaspacks/imgEscapadas/mangamarmenor.webp')"> <a
-                    class="container" href="escapadaspacks/ManaPuentePilar.pdf" target="_blank"
-                    onclick="saveDownloadUrl('escapadaspacks/ManaPuentePilar.pdf')">
+
+            <div class="card" style="background-image: url('EscapadasPacks/imgEscapadas/mangamarmenor.webp')"> <a
+                    class="container" href="EscapadasPacks/ManaPuentePilar.pdf" target="_blank"
+                    onclick="saveDownloadUrl('EscapadasPacks/ManaPuentePilar.pdf')">
                     <div>
                         <h3><b>La Manga del Mar Menor - Puente del Pilar</b></h3>
                         <p><b>Escapadas</b></p>
@@ -197,7 +212,9 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="https://wa.me/34692875813?text=Hola,%20me%20gustaría%20más%20información%20acerca%20de...">Contactanos por WhatsApp</a>
+                        <a
+                            href="https://wa.me/34692875813?text=Hola,%20me%20gustaría%20más%20información%20acerca%20de...">Contactanos
+                            por WhatsApp</a>
                     </td>
                 </tr>
                 <tr>
